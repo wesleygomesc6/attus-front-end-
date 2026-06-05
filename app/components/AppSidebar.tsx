@@ -24,6 +24,11 @@ const menuItems: MenuItem[] = [
     href: '/pedidos',
   },
   {
+    label: 'Vender',
+    icon: 'pi pi-cart-arrow-down',
+    href: '/vender',
+  },
+  {
     label: 'Venderdores',
     icon: 'pi pi-user',
     href: '/vendedores',

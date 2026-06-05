@@ -277,3 +277,12 @@
     padding: 1rem;
   }
 }
+
+.dashboard-card {
+    min-height: 11rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.dashboard-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}

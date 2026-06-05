@@ -105,9 +105,9 @@ export default function PedidosPage() {
                 summary: 'Status do pedido atualizado com sucesso.',
                 detail: `O pedido #${pedidoAtualizado.id} agora está com status ${pedidoAtualizado.status}.`,
             });
-            queryClient.setQueryData(['pedidos'], (oldData: Pedido[] | undefined) => {
-                if (!oldData) return [pedidoAtualizado];
-                return oldData.map(pedido => pedido.id === pedidoAtualizado.id ? pedidoAtualizado : pedido);
+            queryClient.setQueryData(['pedidos'], (antigos: Pedido[] | undefined) => {
+                if (!antigos) return [pedidoAtualizado];
+                return antigos.map(pedido => pedido.id === pedidoAtualizado.id ? pedidoAtualizado : pedido);
             });
             setDialogoAtualizarStatus(false);
         } catch (error) {
