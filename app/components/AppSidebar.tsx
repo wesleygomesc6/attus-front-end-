@@ -14,9 +14,14 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   {
+    label: 'Dashboards',
+    icon: 'pi pi-chart-bar',
+    href: '/',
+  },
+  {
     label: 'Pedidos',
     icon: 'pi pi-shopping-cart',
-    href: '/',
+    href: '/pedidos',
   },
   {
     label: 'Venderdores',
@@ -25,7 +30,8 @@ const menuItems: MenuItem[] = [
   },
   {
     label: 'Clientes',
-    icon: 'pi pi-users'
+    icon: 'pi pi-users',
+    href: '/clientes',
   }
 ];
 
